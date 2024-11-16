@@ -18,6 +18,7 @@
   min-block-size: 668px;
   padding-inline: 10px;
   padding-block: 10px;
+  margin-block-end: 40px;
 }
 
 @media (width >= 768px) {
@@ -40,6 +41,8 @@
   right: 10px;
   border-block-start: 1px solid var(--decoration-color, #FF0070);
   border-inline-end: 1px solid var(--decoration-color, #FF0070);
+  inline-size: 25px;
+  block-size: 25px;
 }
 
 .decorated-zone::after {
@@ -68,13 +71,13 @@
 
 .header__rec {
   position: absolute;
-  color: var(--bg-accent-color);
+  color: var(--bg-accent-color, #FF0070);
   display: inline-block;
   text-transform: uppercase;
   font-family: var(--main-font, monospace);
   font-size: 18px;
   line-height: 25px;
-  right: 38px;
+  right: 20px;
   top: 10px;
 }
 
@@ -82,8 +85,8 @@
   content: "";
   display: inline-block;
   border-radius: 50%;
-  box-shadow: 0 0 4px 2px var(--bg-accent-color);
-  background-color: var(--bg-accent-color);
+  box-shadow: 0 0 4px 2px var(--bg-accent-color, #FF0070);
+  background-color: var(--bg-accent-color, #FF0070);
   inline-size: 9px;
   block-size: 9px;
 }
@@ -98,7 +101,7 @@
   margin-block-end: 55px;
 }
 
-.header__title-two {
+.title-decor {
   font-family: var(--main-font, monospace);
   background-color: var(--bg-accent-color);
   font-weight: 700;
