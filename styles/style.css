@@ -135,6 +135,12 @@
   padding-inline: 10px;
 }
 
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .section {
   display: grid;
   grid-template-rows: minmax(min-content, max-content);
@@ -193,16 +199,13 @@
 }
 
 .footer {
-  display: grid;
-  grid-template-rows: 1fr min-content 1fr;
   position: relative;
+  display: grid;
+  place-items: center;
   block-size: 100vh;
   min-block-size: 668px;
-  padding-inline: 10px;
-  padding-block: 10px;
-  align-items: center;
-  justify-items: center;
-
+  padding: 10px;
+  margin-block-start: 40px;
 }
 
 .footer__title {
@@ -211,5 +214,4 @@
   color: var(--text-color);
   font-weight: 700;
   line-height: 95.7%;
-  margin-block-end: 55px;
 }
