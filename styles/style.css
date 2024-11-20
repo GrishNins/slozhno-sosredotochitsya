@@ -21,6 +21,23 @@
   align-items: baseline;
 }
 
+@media (width >=768px) {
+  .header {
+    padding-inline: 20px;
+    padding-block: 20px;
+  }
+
+  .decorated-zone::after {
+    top: 20px;
+    right: 20px;
+}
+
+.decorated-zone::before {
+    bottom: 20px;
+    left: 20px;
+}
+}
+
 .decorated-zone::before {
   content: "";
   position: absolute;
@@ -80,26 +97,43 @@
 }
 
 .header__theme-menu-item  {
-
+  
 }
 
 .header__theme-menu-button {
   font-family: var(--main-font, monospace);
   font-size: 18px;
-  color: var(--button-color);
+  color: var(--button-color, #FF0070);
   text-transform: lowercase;
   display: block;
   border: 1px solid transparent;
   background-color: transparent;
 }
 
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  box-shadow: 0 1px 0 var(--link-shadow-color, #FF0070);
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--button-hover-color, rgba(255, 0, 112, 0.4));
+  opacity: 0.4;
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid var(--button-active-color, #FF0070);
+  pointer-events: none;
+}
+
+
+
 .header__theme-menu-button_type_light {
 
 }
 
-.header__theme-menu-button_active {
-  pointer-events: none;
-}
 
 .header__theme-menu-button_type_auto {
 
@@ -115,7 +149,7 @@
   font-family: var(--main-font, monospace);
   color: var(--text-color);
   font-weight: 700;
-  line-height: 95.7%;
+  line-height: 84%;
 }
 
 .title-decor {
@@ -127,12 +161,23 @@
   color: var(--text-two-color);
 }
 
+.title-decor_text {
+  margin-top: 12px;
+}
+
 .main {
   display: flex;
   flex-direction: column;
   gap: 50px;
   margin-block-start: 40px;
   padding-inline: 10px;
+}
+
+@media (width >=768px) {
+  .main {
+  gap: 80px;
+  padding: 60px 20px;
+  }
 }
 
 article {
@@ -173,6 +218,23 @@ article {
   font-size: 18px;
   font-weight: 400;
   line-height: 23.4px;
+}
+
+.text__link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.text__link:focus {
+  outline: none;
+}
+
+.text__link:hover {
+  border-block-end: 1px solid var(--link-color);
+}
+
+.text__link:focus-visible {
+  outline: 1px solid var(--link-color);
 }
 
 .section__title-text-two {
