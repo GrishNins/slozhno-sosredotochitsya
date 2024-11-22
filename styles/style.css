@@ -364,6 +364,15 @@ article {
   margin-block-start: 40px;
 }
 
+@media (width >=768px) {
+  .footer {
+    margin-block-start: 36px;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+  }
+}
+
+
 .footer__title {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-family: var(--main-font, monospace);
