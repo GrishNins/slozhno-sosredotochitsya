@@ -290,13 +290,69 @@ article {
   gap: 10px;
 }
 
+@media (width >=768px) {
+  .section__images {
+    gap: 20px;
+  }
+}
+
+.section__image-item {
+  display: grid;
+  grid-template-rows: minmax(min-content, max-content);
+  gap: 10px;
+}
+
+@media (width >=768px) {
+  .section__image-item {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, minmax(min-content, max-content));
+    grid-template-areas:
+    "sunset sunset icecream"
+    "tape books icecream"
+    "tape street street";
+    gap: 23px;
+  }
+
+  .item-sunset {
+    grid-area: sunset;
+  }
+
+  .item-ice-cream {
+    grid-area: icecream;
+  }
+
+  .item-tape {
+    grid-area: tape;
+  }
+
+  .item-books {
+    grid-area: books;
+  }
+
+  .item-street {
+    grid-area: street;
+  }
+}
+
 .images__item {
   object-fit: cover;
   object-position: center;
   inline-size: 100%;
   block-size: 100%;
-
 }
+
+@media (width >=768px) {
+  .images__item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, minmax(min-content, max-content));
+    grid-template-areas:
+    "sunset sunset icecream"
+    "tape books icecream"
+    "tape street street";
+    gap: 23px;
+}
+  }
 
 .footer {
   position: relative;
