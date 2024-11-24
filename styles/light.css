@@ -32,6 +32,6 @@
   --link-hover-color: #353430;
 }
 
-page.theme_dark .header__rec {
-display: none;
+.header__rec {
+  display: none;
 }
