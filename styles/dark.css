@@ -27,3 +27,7 @@
   --link-focus-color: #F1B2CE;
   --link-hover-color: #F1B2CE;
 }
+
+.header__rec {
+  display: inline-block;
+}
