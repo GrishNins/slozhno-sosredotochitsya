@@ -153,11 +153,11 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  box-shadow: 0 1px 0 var(--link-shadow-color, #FF0070);
+  box-shadow: 0 1px 0 var(--button-focus-color, #FF0070);
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--button-hover-color, rgba(255, 0, 112, 0.4));
+  outline: 1px solid var(--button-hover-color, rgba(255, 0, 112));
   opacity: 0.4;
 }
 
@@ -168,9 +168,9 @@
 
 .header__title {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--header-shadow-color);
   font-family: var(--main-font, monospace);
-  color: var(--text-color);
+  color: var(--header-color);
   font-weight: 700;
   line-height: 84%;
 }
@@ -312,7 +312,7 @@ article {
 
 .text__link {
   text-decoration: none;
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--bg-accent-color);
 }
 
 .text__link:focus {
@@ -320,11 +320,11 @@ article {
 }
 
 .text__link:hover {
-  border-block-end: 1px solid var(--link-color);
+  border-block-end: 1px solid var(--link-hover-color);
 }
 
 .text__link:focus-visible {
-  outline: 1px solid var(--link-color);
+  outline: 1px solid var(--link-focus-color);
 }
 
 .section__title-text-two {
@@ -427,7 +427,8 @@ article {
 .footer__title {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-family: var(--main-font, monospace);
-  color: var(--text-color);
+  color: var(--footer-color);
+  text-shadow: 2px 2px 0 var(--footer-shadow-color);
   font-weight: 700;
   line-height: 95.7%;
 }
