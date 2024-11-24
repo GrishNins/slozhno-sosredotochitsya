@@ -77,7 +77,7 @@
 .header__rec {
   position: absolute;
   color: var(--bg-accent-color, #FF0070);
-  display: inline-block;
+  display:inline-block;
   text-transform: uppercase;
   font-family: var(--main-font, monospace);
   font-size: 18px;

@@ -32,6 +32,10 @@
   --link-hover-color: #353430;
 }
 
-.page.theme_dark.header__rec {
-  display: inline-block;
+.theme_light.header__rec {
+  display: none;
+}
+
+.theme_light.header__rec::after {
+display: none;
 }
