@@ -20,14 +20,11 @@
   --footer-shadow-color: #FF0070;
   --button-color: #FF0070;
   --button-active-color: #FF0070;
-  --button-hover-color: rgba(255, 0, 112, 0.4)
-  --button-focus-color: rgba(255, 0, 112, 1);
+  --button-hover-color: rgba(255, 0, 112);
+  --button-focus-color: rgba(255, 0, 112);
   --link-color: #F1B2CE;
   --link-shadow-color: #FF0070;
   --link-focus-color: #F1B2CE;
   --link-hover-color: #F1B2CE;
 }
 
-.header__rec {
-  display: inline-block;
-}
