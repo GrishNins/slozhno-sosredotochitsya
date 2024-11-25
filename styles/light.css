@@ -24,7 +24,7 @@
   --footer-shadow-color: #FF0070;
   --button-color: #353430;
   --button-active-color: #353430;
-  --button-hover-color: rgba(53, 52, 48);
+  --button-hover-color: #32312D66;
   --button-focus-color: rgba(53, 52, 48);
   --link-color: #F1B2CE;
   --link-shadow-color: #FF0070;
@@ -53,14 +53,14 @@
   --footer-shadow-color: #FF0070;
   --button-color: #353430;
   --button-active-color: #353430;
-  --button-hover-color: rgba(53, 52, 48);
+  --button-hover-color: #32312D66;
   --button-focus-color: rgba(53, 52, 48);
   --link-color: #F1B2CE;
   --link-shadow-color: #FF0070;
   --link-focus-color: #353430;
   --link-hover-color: #353430;
   }
-
+  
   .header__rec {
     display: none;
   }
