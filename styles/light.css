@@ -37,12 +37,12 @@
 }
 
 .theme_light.header__rec::after {
-display: none;
+  display: none;
 }
 
 @media (prefers-color-sheme: light) {
   :root {
-    --bg-color: #FFF1F7;
+  --bg-color: #FFF1F7;
   --main-font: IBM Plex Mono, monospace;
   --bg-cover-image: url(../images/cover-image-light.png);
   --accent-color: #FF8DCB;
