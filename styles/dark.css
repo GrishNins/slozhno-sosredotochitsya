@@ -28,7 +28,11 @@
   --link-hover-color: #F1B2CE;
 }
 
-@media (prefers-color-sheme: dark) {
+.theme_dark .header__rec {
+  display: inline-block;
+}
+
+@media (prefers-color-scheme: dark) {
   :root {
   --bg-color: #000028;
   --main-font: IBM Plex Mono, monospace;
@@ -51,5 +55,5 @@
   --link-shadow-color: #FF0070;
   --link-focus-color: #F1B2CE;
   --link-hover-color: #F1B2CE;
-  }
+}
 }

@@ -32,15 +32,11 @@
   --link-hover-color: #353430;
 }
 
-.theme_light.header__rec {
+.theme_light .header__rec {
   display: none;
 }
 
-.theme_light.header__rec::after {
-  display: none;
-}
-
-@media (prefers-color-sheme: light) {
+@media (prefers-color-scheme: light) {
   :root {
   --bg-color: #FFF1F7;
   --main-font: IBM Plex Mono, monospace;
