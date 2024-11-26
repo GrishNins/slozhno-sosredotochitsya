@@ -387,7 +387,6 @@ article {
 
 @media (width >=768px) {
   .footer {
-    margin-block-start: 36px;
     padding-inline-start: 20px;
     padding-inline-end: 20px;
   }
