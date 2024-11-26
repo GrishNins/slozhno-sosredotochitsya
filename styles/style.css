@@ -202,22 +202,16 @@ article {
   gap: 20px;
 }
 
-.section__content_why {
+.section {
   display: grid;
-  grid-template-rows: minmax(min-content, max-content);
+  grid-template-rows:minmax(min-content, max-content);
   gap: 20px;
 }
 
-.section__content_what {
-  display: grid;
-  grid-template-rows: minmax(min-content, max-content);
-  gap: 20px;
-}
-
-.section__content_how {
-  display: grid;
-  grid-template-rows: minmax(min-content, max-content);
-  gap: 20px;
+@media (width >=768px) {
+  .section {
+    grid-template-columns: 1fr 2fr;
+  }
 }
 
 @media (width >=1024px) {
