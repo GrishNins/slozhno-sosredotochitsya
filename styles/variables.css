@@ -24,5 +24,7 @@
   --link-shadow-color: #FF0070;
   --link-focus-color: #F1B2CE;
   --link-hover-color: #F1B2CE;
+  --max-gap: 20px;
+  --min-gap: 10px;
 }
 
