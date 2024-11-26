@@ -202,13 +202,6 @@ article {
   gap: 20px;
 }
 
-/*.section {
-  display: grid;
-  grid-template-rows: minmax(min-content, max-content);
-  gap: var(--max-gap);
-}
-*/
-
 .section__content_why {
   display: grid;
   grid-template-rows: minmax(min-content, max-content);
@@ -234,7 +227,6 @@ article {
     gap: 20px;
   }
 }
-
 
 @media (width >=768px) {
   .section__content_why {
@@ -339,7 +331,7 @@ article {
     "sunset sunset icecream"
     "tape books icecream"
     "tape street street";
-    gap: 23px;
+    gap: 20px;
   }
 
   .item-sunset {
