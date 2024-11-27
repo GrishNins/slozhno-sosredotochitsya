@@ -235,11 +235,11 @@ article {
 }
 
 @media (width >=768px) {
-  .section__title_type_full_width {
+  .section__title_type {
     grid-column: 1/-1;
   }
 
-  .section__article-list_type_column {
+  .section__article-list_type {
     display: grid;
     grid-column: 1/-1;
   }
@@ -252,7 +252,7 @@ article {
 }
 
 @media (width >=1024px) {
-  .section__article-list_type_column {
+  .section__article-list_type {
     grid-template-columns: repeat(3, 1fr);
   }
 }
